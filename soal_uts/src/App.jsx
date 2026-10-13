@@ -12,7 +12,7 @@ import Footer from './components/layout/Footer.jsx';
 import Beranda from './pages/Beranda.jsx';
 import Profil from './pages/Profil.jsx';
 import Berita from './pages/Berita.jsx';
-import Lainlain from './pages/LainLain.jsx';
+import LainLain from './pages/LainLain.jsx';
 import Mahasiswa from './pages/Mahasiswa.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Pendidikan from './pages/Pendidikan.jsx';
@@ -31,7 +31,7 @@ function App() {
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
             <Route path="/Berita" element={<Berita />} />
-            <Route path="/lain-lain" element={<Lainlain />} />
+            <Route path="/lain-lain" element={<LainLain />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
