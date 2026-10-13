@@ -11,21 +11,33 @@ import Footer from './components/Footer';
 
 import Beranda from './pages/Beranda';
 import Profil from './pages/Profil';
-import berita from './pages/Berita';
-import lain lain dari './pages/LainLain';
-import mahasiswa from './pages/Mahasiswa';
-import notfound from './pages/NotFound';
-import pendidikan from './pages/Pendidikan';
-import riset from './pages/Riset';
+import Berita from './pages/Berita';
+import Lainlain from './pages/LainLain';
+import Mahasiswa from './pages/Mahasiswa';
+import NotFound from './pages/NotFound';
+import Pendidikan from './pages/Pendidikan';
+import Riset from './pages/Riset';
 
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
   return (
     <div className="container">
+      <Header />
       {/* TODO 3 Header */}
       <div className="main-wrapper">
         <main className="content-area">
+          <Routes>
+            <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/Berita" element={<Berita />} />
+            <Route path="/lain-lain" element={<Lainlain />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/riset" element={<Riset />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          
           {/* TODO 6 Routes 
           <Routes>
             <Route path="/" element={<Beranda />} />
@@ -33,9 +45,10 @@ function App() {
           */}
         </main>
          {/* TODO 4 SideBar */}
+         <SideBar />
       </div>
       {/* TODO 5 Footer */}
-      
+      <Footer />
     </div>
   );
 }
