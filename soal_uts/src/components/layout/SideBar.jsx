@@ -22,7 +22,7 @@ export default function SideBar() {
     </aside>
   );
 }
-
+    
 // TODO 11
 // 1. Buat component function dengan nama SideBar
 // 2. Struktur wajib di dalam return:

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 // TODO 9
-import bgGambar from '../assets/img/bg-header.jpg'
+import bgGambar from '../../assets/header-bg.png';
 
     export default function Header() {
         return (
