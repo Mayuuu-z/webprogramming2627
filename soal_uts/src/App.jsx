@@ -1,17 +1,27 @@
-//import './assets/style.css';
-//import { Routes, Route } from 'react-router-dom';
+import './assets/style.css';
+import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
-
+import Header from './components/Header';
+import SideBar from './components/SideBar';
+import Footer from './components/Footer';
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
+
+import Beranda from './pages/Beranda';
+import Profil from './pages/Profil';
+import berita from './pages/Berita';
+import lain lain dari './pages/LainLain';
+import mahasiswa from './pages/Mahasiswa';
+import notfound from './pages/NotFound';
+import pendidikan from './pages/Pendidikan';
+import riset from './pages/Riset';
 
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
   return (
-    
     <div className="container">
       {/* TODO 3 Header */}
       <div className="main-wrapper">
