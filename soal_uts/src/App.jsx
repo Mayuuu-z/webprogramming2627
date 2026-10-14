@@ -18,7 +18,6 @@ import NotFound from './pages/NotFound.jsx';
 import Pendidikan from './pages/Pendidikan.jsx';
 import Riset from './pages/Riset.jsx';
 
-// lakukan commit "selesai TODO 2" 
 
 function App() {
   return (
@@ -38,21 +37,15 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
           
-          {/* TODO 6 Routes 
-          <Routes>
-            <Route path="/" element={<Beranda />} />
-          </Routes>
-          */}
+          {}
         </main>
-         {/* TODO 4 SideBar */}
+         {}
          <SideBar />
       </div>
-      {/* TODO 5 Footer */}
+      {}
       <Footer />
     </div>
   );
 }
 
-export default App;
-
-// TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
+export default App; 
