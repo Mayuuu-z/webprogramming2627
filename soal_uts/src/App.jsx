@@ -18,7 +18,7 @@ import NotFound from './pages/NotFound.jsx';
 import Pendidikan from './pages/Pendidikan.jsx';
 import Riset from './pages/Riset.jsx';
 
-// lakukan commit "selesai TODO 2" dan push 
+// lakukan commit "selesai TODO 2" 
 
 function App() {
   return (
