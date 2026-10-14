@@ -1,13 +1,12 @@
 import './assets/style.css';
 import { Routes, Route } from 'react-router-dom';
 
-// TODO 1  Import Komponen Layout (Header, SideBar, Footer)
+
 import Header from './components/layout/Header.jsx';
 import SideBar from './components/layout/SideBar.jsx';
 import Footer from './components/layout/Footer.jsx';
-// lakukan commit "selesai TODO 1" dan push 
 
-// TODO 2  komponen Pages (Beranda, Profil, dll)
+
 
 import Beranda from './pages/Beranda.jsx';
 import Profil from './pages/Profil.jsx';
@@ -23,7 +22,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      {/* TODO 3 Header */}
+   
       <div className="main-wrapper">
         <main className="content-area">
           <Routes>
