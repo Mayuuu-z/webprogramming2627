@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header.jsx';
 import SideBar from './components/layout/SideBar.jsx';
 import Footer from './components/layout/Footer.jsx';
+import Array from "./pages/Array";
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/array" element={<Array />} />
           </Routes>
           
           {}
