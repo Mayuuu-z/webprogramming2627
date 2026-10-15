@@ -15,8 +15,8 @@ import bgGambar from '../../assets/header-bg.png';
             }}
             >
                 <div className="header-text">
-                    <h1>Prodi Informatika</h1>
-                    <p>Universitas Matana</p>
+                    <h1>ProdiInformatika</h1>
+                    <p>Universitas Matana.</p>
                 </div>  
                 <nav className="nav-menu">
                     <NavLink to="/">Beranda</NavLink>
