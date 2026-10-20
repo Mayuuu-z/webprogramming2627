@@ -1,8 +1,8 @@
-export default function TransaksiItem() {
-  return (
-    <div style={{ backgroundColor: '#f8f9fa', padding: '15px', borderRadius: '8px' }}>
-      <h4 style={{ color: '#28a745', fontSize: '18px' }}>Pemasukan: Rp 500.000</h4>
-    </div>
-  );
+import '../styles/transaksi.css';
+
+export default function Badge({ tipe, children }) {
+    tipe = tipe || 'Pemasukan';
+    children = children || '+ Rp 500.000';
+    const className = tipe === 'Pemasukan' ? 'badge-pemasukan' : 'badge-pengeluaran';
+    return <span className={className}>{children}</span>;
 }
-// Cara pakai: <Badge tipe="Pemasukan">+ Rp 50.000</Badge> misal pada app.jsx

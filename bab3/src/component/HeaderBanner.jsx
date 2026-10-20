@@ -1,13 +1,17 @@
-// src/component/HeaderBanner.jsx
+import { Container } from 'react-bootstrap'
+
 function HeaderBanner() {
   return (
-    <div className="p-5 mb-4 bg-light rounded-3 border">
+    <div className="hero-banner mb-4">
       <Container fluid className="py-3">
+        <span className="eyebrow">KEUANGAN PRIBADI</span>
         <h1 className="display-5 fw-bold">Catatan Keuangan</h1>
-        <p className="col-md-8 fs-4">
-          Kelola arus kas, pantaulah pengeluaran harian, dan capai target finansial Anda secara terencana.
+        <p className="col-md-8 fs-5 mb-0">
+          Pantau arus kas harian, atur pengeluaran, dan lihat perkembangan saldo dalam satu tempat.
         </p>
       </Container>
     </div>
-  );
+  )
 }
+
+export default HeaderBanner
