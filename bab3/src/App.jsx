@@ -17,13 +17,19 @@ function App() {
       <AppNavigation />
       <Routes>
         <Route path='/' element={<div />} />
-        <Route path='/transaksi' element={<TransaksiItem />} />
+        <Route path='/transaksi' element={ <TransaksiItem />} />
+        <Route path='/kartu' element={ <KartuRingkasan />} />
+        <Route path='/badge' element={ <Badge />} />
+        <Route path='/wallet' element={ <WalletSummary />} />
         <Route path='/karturingkasan' element={<KartuRingkasan />} />
-        <Route path='/badge' element={<Badge />} />
         <Route path='/walletsummary' element={<WalletSummary />} />
+        <Route path='/laporan' element={<CardStatusDemo />} />
         <Route path='/cardstatusdemo' element={<CardStatusDemo />} />
+        <Route path='/banner' element={<HeaderBanner />} />
         <Route path='/headerbanner' element={<HeaderBanner />} />
+        <Route path='/kelola' element={<TransactionManager />} />
         <Route path='/layoutgrid' element={<LayoutGrid />} />
+        <Route path='/layout' element={<LayoutGrid />} />
         <Route path='/transactionmanager' element={<TransactionManager />} />
       </Routes>
     </>
