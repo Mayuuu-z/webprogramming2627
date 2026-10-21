@@ -1,76 +1,47 @@
-// src/component/TransactionManager.jsx
-import { useState } from 'react';
-import { Form, InputGroup, Modal, Button, Table, ProgressBar } from 'react-bootstrap';
+import { Button, Figure, Form, Image, InputGroup, ListGroup } from 'react-bootstrap'
+import heroImage from '../assets/hero.png'
 
 function TransactionManager() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
-    <div className="container mt-4">
-      <div className="d-flex justify-content-between align-items-center mb-3">
-        <h3>Penggunaan Anggaran</h3>
-        <Button variant="success" onClick={handleShow}>
-          + Tambah Transaksi
-        </Button>
-      </div>
+    <main className="container py-4">
+      <h1 className="h3 mb-3">Komponen Tambahan</h1>
 
-      <ProgressBar now={75} label="75%" variant="warning" className="mb-4" />
+      <h2 className="h5">Form dan Input Group</h2>
+      <Form className="mb-4">
+        <Form.Group className="mb-3" controlId="namaTransaksi">
+          <Form.Label>Nama transaksi</Form.Label>
+          <Form.Control type="text" placeholder="Masukkan nama transaksi" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="jenisTransaksi">
+          <Form.Label>Jenis transaksi</Form.Label>
+          <Form.Select defaultValue="">
+            <option value="" disabled>Pilih jenis transaksi</option>
+            <option>Pemasukan</option>
+            <option>Pengeluaran</option>
+          </Form.Select>
+        </Form.Group>
+        <Form.Label>Nominal</Form.Label>
+        <InputGroup className="mb-3">
+          <InputGroup.Text>Rp</InputGroup.Text>
+          <Form.Control type="number" placeholder="0" aria-label="Nominal transaksi" />
+        </InputGroup>
+        <Button type="button" variant="primary">Simpan</Button>
+      </Form>
 
-      {/* Tabel Data Transaksi */}
-      <Table striped bordered hover responsive>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Keterangan</th>
-            <th>Kategori</th>
-            <th>Nominal</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Belanja Bulanan</td>
-            <td>Pengeluaran</td>
-            <td>Rp 750.000</td>
-          </tr>
-        </tbody>
-      </Table>
+      <h2 className="h5">Image dan Figure</h2>
+      <Figure>
+        <Image src={heroImage} alt="Ilustrasi catatan keuangan" fluid rounded />
+        <Figure.Caption>Contoh gambar dengan keterangan.</Figure.Caption>
+      </Figure>
 
-      {/* Modal Form Tambah Transaksi */}
-      <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Catat Transaksi Baru</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3">
-              <Form.Label>Keterangan</Form.Label>
-              <Form.Control type="text" placeholder="Misal: Bensin" />
-          </Form.Group>
-
-          <Form.Group className="mb-3">
-            <Form.Label>Nominal</Form.Label>
-            <InputGroup>
-              <InputGroup.Text>Rp</InputGroup.Text>
-              <Form.Control type="number" placeholder="0" />
-            </InputGroup>
-          </Form.Group>
-        </Form>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-          Batal
-        </Button>
-        <Button variant="primary" onClick={handleClose}>
-          Simpan Transaksi
-        </Button>
-      </Modal.Footer>
-    </Modal>
-  </div>
-);
+      <h2 className="h5 mt-3">List Group</h2>
+      <ListGroup>
+        <ListGroup.Item>Belanja bulanan — Pengeluaran</ListGroup.Item>
+        <ListGroup.Item>Gaji — Pemasukan</ListGroup.Item>
+        <ListGroup.Item>Bayar listrik — Pengeluaran</ListGroup.Item>
+      </ListGroup>
+    </main>
+  )
 }
 
-export default TransactionManager;
+export default TransactionManager
