@@ -28,7 +28,7 @@ function App() {
         <Route path='/banner' element={<HeaderBanner />} />
         <Route path='/headerbanner' element={<HeaderBanner />} />
         <Route path='/kelola' element={<TransactionManager />} />
-        <Route path='/LayoutGrid' element={ <LayoutGrid /> } />
+        <Route path='/LayoutGrid' element={<LayoutGrid />} />
         <Route path='/layoutgrid' element={<LayoutGrid />} />
         <Route path='/layout' element={<LayoutGrid />} />
         <Route path='/transactionmanager' element={<TransactionManager />} />
