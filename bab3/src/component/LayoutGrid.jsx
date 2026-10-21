@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default function LayoutGrid() {
   return (
-    <Container>
+    <Container className="my-4">
       <Row>
         {/* Mengambil 8 dari 12 kolom pada layar sedang/besar */}
         <Col md={8}>
@@ -17,3 +17,4 @@ export default function LayoutGrid() {
     </Container>
   );
 }
+
