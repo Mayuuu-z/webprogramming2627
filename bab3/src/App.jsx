@@ -10,6 +10,7 @@ import HeaderBanner from './component/HeaderBanner'
 import LayoutGrid from './component/LayoutGrid'
 import CardStatusDemo from './component/CardStatusDemo'
 import TransactionManager from './component/TransactionManager'
+import FormTambahTransaksi from './component/FormTambahTransaksi'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/layoutgrid' element={<LayoutGrid />} />
         <Route path='/layout' element={<LayoutGrid />} />
         <Route path='/transactionmanager' element={<TransactionManager />} />
+        <Route path='/formtambahtransaksi' element={<FormTambahTransaksi />} />
       </Routes>
     </>
   )

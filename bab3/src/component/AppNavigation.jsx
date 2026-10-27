@@ -16,6 +16,7 @@ function AppNavigation() {
               <NavDropdown.Item as={NavLink} to="/cardstatusdemo">CardStatusDemo</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/headerbanner">HeaderBanner</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/transactionmanager">TransactionManager</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/formtambahtransaksi">FormTambahTransaksi</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to="/karturingkasan">KartuRingkasan</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/layoutgrid">LayoutGrid</NavDropdown.Item>
