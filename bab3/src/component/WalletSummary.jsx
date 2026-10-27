@@ -1,4 +1,3 @@
-//src/component/WalletSummary.jsx
 import { Container, Card, Button, Badge } from 'react-bootstrap';
 
 export default function WalletSummary() {

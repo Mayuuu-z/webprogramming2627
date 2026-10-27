@@ -17,7 +17,7 @@ function FormTambahTransaksi() {
 
     try {
       // Simulasi pengiriman HTTP POST Request ke Server/API
-      const response = await fetch('http://localhost:3000/transaksi', {
+      const response = await fetch('https://api.example.com/transaksi', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
