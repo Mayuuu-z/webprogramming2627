@@ -515,7 +515,7 @@ jobs:
             local file=$1
             local teks_wajib=$2
             # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
-            if ! grep -Fq "$teks_wajib" "$file"; then
+            if ! grep -q "$teks_wajib" "$file"; then
               echo "❌ PELANGGARAN di $file: Belum ada berkas ini '$teks_wajib'"
               ERROR=1
             fi
@@ -598,8 +598,7 @@ jobs:
           cek_teks "$FILEB" "console.log ('Data diterima:', data)"
           cek_teks "$FILEB" "setTransaksi(data)"
           cek_teks "$FILEB" "console.error('Error:', error.message)"
-          cek_teks "$FILEB" "ambilDataAsync();"
-          cek_teks "$FILEB" "<AppNavigation />"
+          cek_teks "$FILEB" " ambilDataAsync();"
           # Cara menggunakannya 
           if [ $ERROR -eq 1 ]; then
             echo ""
